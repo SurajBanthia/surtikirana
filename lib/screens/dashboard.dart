@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:surtikirana/app_router.dart';
 
 class DashBoard extends StatefulWidget {
   @override
@@ -97,13 +98,18 @@ class _DashBoardState extends State<DashBoard> {
           ),
         ),
         actions: [
-          CircleAvatar(
-            radius: 14,
-            backgroundColor: Colors.lightBlue[100],
-            child: Icon(
-              Icons.shopping_cart_outlined,
-              size: 18,
-              color: Colors.black,
+          InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, AppRouter.profile,);
+            },
+            child: CircleAvatar(
+              radius: 14,
+              backgroundColor: Colors.lightBlue[100],
+              child: Icon(
+                Icons.shopping_cart_outlined,
+                size: 18,
+                color: Colors.black,
+              ),
             ),
           ),
           SizedBox(
