@@ -100,7 +100,7 @@ class _DashBoardState extends State<DashBoard> {
         actions: [
           InkWell(
             onTap: () {
-              Navigator.pushNamed(context, AppRouter.profile,);
+              Navigator.pushNamed(context, AppRouter.deliveryaddress,);
             },
             child: CircleAvatar(
               radius: 14,

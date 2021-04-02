@@ -104,11 +104,16 @@ class _ProfileState extends State<Profile> {
                             children: [
                               Column(
                                 children: [
-                                  ClipOval(
-                                    child: Image.asset(
-                                      "assets/images/batman.png",
-                                      width: 45,
-                                      height: 45,
+                                  InkWell(
+                                    onTap: () {
+                                      Navigator.pushNamed(context, AppRouter.deliveryaddress,);
+                                    },
+                                    child: ClipOval(
+                                      child: Image.asset(
+                                        "assets/images/batman.png",
+                                        width: 45,
+                                        height: 45,
+                                      ),
                                     ),
                                   ),
                                   SizedBox(
